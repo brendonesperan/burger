@@ -9,6 +9,7 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 ### Important
 
 Be sure to utilize the [MYSQL Heroku Deployment Guide](../../Supplemental/MySQLHerokuDeploymentProcess.pdf) in order to deploy your assignment.
+https://fast-shore-95629.herokuapp.com/
 
 ### Before You Begin
 
