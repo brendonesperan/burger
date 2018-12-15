@@ -2,24 +2,109 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-	<title>Burger Time</title>
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/assets/js/main_handlebars_logic.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
+    <title>Burger Time</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/assets/js/main_handlebars_logic.js"></script>
 </head>
 
 <body>
-	<img src="" alt="">
-	{{{ body }}}
-	<footer>
-		<div class="">
-		<div class="container">
-			<span></span>
-			<a href=""></a>
-		</div>
-	</div>
-	</footer>
+
+
+    <img src="/assets/img/food.jpg" alt="">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron text-center">
+                    <h1 class="display-4">Burger Time</h1>
+                    <p class="lead">Add a burger. Click to eat and remove from list.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <h2>Name your burger to add</h2>
+                <form class="create-form">
+
+                    <div class="form-group">
+                        <label>Burger Name:</label>
+                        <input type="text" id="new-burger" name="name">
+                    </div>
+
+                    <button type="submit" id="submit">Add Burger</button>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                {{{ body }}}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="">
+            <div class="container">
+                <span></span>
+                <a href=""></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
+</html>
+
+
+
+
+
+{{!-- <!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#" style="color: white">Restaurant</a>
+    </nav>
+
+
+    <img src="/assets/img/food.jpg" alt="">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron text-center">
+                    <h1 class="display-4">Restaurant App</h1>
+                    <p class="lead">This is a simple tool designed to add which foods you would like to eat, and delete
+                        which foods you have already consumed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <h2>Add your food</h2>
+                <form class="create-form">
+
+                    <div class="form-group">
+                        <label>Food Name:</label>
+                        <input type="text" id="new-burger" name="name">
+                    </div>
+
+                    <button type="submit" id="submit">Add Food</button>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                {{{ body }}}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-content">Restaurant APP</p>
+    </footer>
+</body> --}}
 
 </html>

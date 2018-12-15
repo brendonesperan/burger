@@ -10,7 +10,7 @@ var router = express.Router();
 router.get("/", function(req, res) {
     burger.selectAll(function(data) {
         var hbsObject = {
-            burgers: data
+            burger: data
         }
         console.log(hbsObject);
         console.log("Data has been rendered");
@@ -19,7 +19,7 @@ router.get("/", function(req, res) {
 })
 
 // route for posting new data
-router.post("/api/burgers", function(req, res) {
+router.post("/api/burger", function(req, res) {
     burger.insert([
         "burger_name"
     ],[
@@ -31,7 +31,7 @@ router.post("/api/burgers", function(req, res) {
 })
 
 // route for removing data
-router.delete("/api/burgers/:id", function(req, res) {
+router.delete("/api/burger/:id", function(req, res) {
 
     // create condition
     var condition = req.params.id;
